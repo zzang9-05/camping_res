@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+body    {
+    background: linear-gradient(#FFF8EE, #AFA463) no-repeat;}
+#wrap   {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* header */
+header figure   {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: radial-gradient(rgba(18, 38, 128, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../img/img_bg.jpg) no-repeat center/cover;
+}
+header figure h1 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-60%, -50%);
+    font-family: "Praise", cursive;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    z-index: 3;
+}
+header .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+header .gnb li  {
+    flex: 1;
+    padding: 15px 0;
+    background: #321387;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+/* main */
+main    {
+    width: 100%;
+    padding: 80px 40px;
+    box-sizing: border-box;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+}
+section .text_area  {
+    width: 70%;
+}
+section h2  {
+    font-size: 32px;
+    font-weight: 500;
+    color: #3B4CB5;
+    margin-bottom: 20px;
+}
+section strong  {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+}
+section .text   {
+    font-size: 15px;
+    line-height: 1.6;
+}
+section .text + .text   {margin-top: 10px;}
+aside   {width: 20%;}
+aside ul li {
+    position: relative;
+}
+aside ul li:hover figure   {filter: none;}
+aside ul li figure    {
+    width: 100%; height: 200px;
+    background: url(../img/img_camp.jpg) no-repeat center/cover;
+    margin-bottom: 20px;
+    transition: filter 0.3s ease;
+    filter: grayscale(100%);
+}
+aside ul li:nth-child(2) figure {
+    height: 280px;
+    background-image: url(../img/img_campfire.jpg);
+    background-position: bottom center;
+}
+aside ul li:nth-child(3) figure {background-image: url(../img/img_camping_car.jpg);}
+footer  {
+    padding: 10px 0;
+    background: #222222;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
